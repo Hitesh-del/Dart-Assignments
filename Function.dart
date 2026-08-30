@@ -476,7 +476,6 @@
 // Output :
 // In Outer function
 
-
 // Program 28 :
 
 // void outerFunc(){
@@ -493,7 +492,6 @@
 
 // Output :
 // Error: Method not found: 'nestedFunc'.
-
 
 // Program 29 :
 
@@ -514,7 +512,6 @@
 // In Outer Function
 // In Nested Function
 
-
 // Program 30 :
 
 // Function outerFunc(){
@@ -532,7 +529,6 @@
 
 // Output :
 // In Outer Function
-
 
 // Program 31:
 
@@ -554,7 +550,6 @@
 // In Outer Function
 // In Nested Function
 
-
 // Program 32 :
 
 // Function outerFunc(){
@@ -566,7 +561,7 @@
 //     void innerFunc2(){
 //         print("In Inner Function 2");
 //     }
-    
+
 //     innerFunc2();
 //     return innerFunc1;
 // }
@@ -581,5 +576,213 @@
 // In Inner Function 2
 // In Inner Function 1
 
-
 // Program 33 :
+// Function outerFunc(){
+//     print("In Outer Function");
+//     void innerFunc(){
+//         print("In Inner Function");
+//     }
+
+//     return innerFunc;
+// }
+
+// void main(){
+//     outerFunc();
+// }
+
+// Output :
+// In Outer Function
+
+// Program 34 :
+// Function outerFunc(){
+//     print("In Outer Function");
+//     void innerFunc(){
+//         print("In Inner Function");
+//     }
+
+//     return innerFunc;
+// }
+
+// void main(){
+//     Function retData = outerFunc();
+//     retData();
+// }
+
+// Output :
+// In Outer Function
+// In Inner Function
+
+// Program 35 :
+// Function OuterFunc(){
+//     print("In Outer Function");
+//     void innerFunc(){
+//         print("In Inner Function");
+//     }
+
+//     return innerFunc;
+// }
+
+// void main(){
+//    Function retData = OuterFunc();
+//    int x = 10;
+//    String str = "Hitesh";
+
+//    print(x .runtimeType);
+//    print(str.runtimeType);
+
+// }
+
+// Output :
+// In Outer Function
+// int
+// String
+
+// Program 36 :
+// Function outerFunc(){
+//     print("In Outer Function");
+//     void innerFunc(int x , int y){
+//         print("In Inner Function");
+//     }
+
+//     return innerFunc;
+// }
+
+// void main(){
+//     Function retData = outerFunc();
+//     print(retData.runtimeType);
+// }
+
+// Output :
+// In Outer Function
+// (int, int) => void
+
+// Program 37 :
+// Function runtimeType
+
+// Function outerFunc(){
+//     print("In Outer Function");
+//     String innerFunc(int x){
+//         return "Hello";
+//     }
+//     return innerFunc;
+// }
+
+// void main(){
+//   Function retData = outerFunc();
+//   print(retData.runtimeType);
+// }
+
+// Output :
+// In Outer Function
+// (int) => String
+
+// Program 38 :
+
+// void main(){
+//     void add(int x , int y){
+//         print(x + y);
+//     }
+// }
+
+// No Output
+
+// Program 39 :
+// void main(){
+// void add(int x , int y){
+//     print(x + y);
+// }
+
+// add(10 , 20);
+// }
+
+// Output :
+// 30
+
+// Program 40 :
+
+// void main(){
+//     var retData = (int x , int y){
+//         print(x + y);
+//     };
+
+//     retData(10 , 20);
+// }
+
+// Output :
+// 30
+
+// Program 41 :
+
+// void main(){
+//     var retData = (int x , int y){
+//         print(x + y);
+//          }
+
+//     retData(10 , 20);
+// }
+
+// Error: Expected ';' after this.
+
+// Program 42 :
+// void main(){
+//     (int x , int y){
+//         print(x + y);
+//     }(50 , 60);
+// }
+
+// Output :
+// 110
+
+// Program 43 :
+// void main(){
+//     var retFun = (int x , int y ){
+//         print(x + y);
+//     };
+
+//     print(retFun.runtimeType);
+// }
+
+// Output :
+// int, int) => Null
+
+// Program 44 :
+// Anonymous Function
+
+// void main(){
+//     var retFunc = (int x , int y ){
+//         return (x + y);
+//     };
+
+//     print(retFunc.runtimeType);
+//     print(retFunc(50 , 60));
+// }
+
+// Output :
+// (int, int) => int
+// 110
+
+// Program 45 :
+// Arrow Function
+
+// void fun(int x , int y)=>print(x + y);
+// void main(){
+// fun(10 , 20);
+// }
+
+// Output :
+// 30
+
+// Program 46 :
+
+// void fun(int x, int y) => print(x + y);
+// int run(int x, int y) => x + y;
+
+// void main() {
+//   fun(10, 20);
+
+//   print(run(50, 60));
+// }
+
+// Output :
+// 30
+// 110
