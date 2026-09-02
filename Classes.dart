@@ -201,6 +201,161 @@
 // Company Name : Google
 // Employee Count : 1000
 
-
 // Program 5 :
+
+// class Player {
+//     String? pName ;
+//     int? jerNo ;
+//     String? country = "India";
+
+//     void playerInfo(){
+//         print("Player Name : ${pName}");
+//         print("Jersey No : ${jerNo}");
+//         print("Player Country : ${country}");
+//     }
+
+// }
+
+// void main(){
+//     Player obj1 = Player();
+//     obj1.pName = "Virat Kolhi";
+//     obj1.jerNo = 18;
+//     obj1.playerInfo();
+
+//     Player obj2 = Player();
+//     obj2.pName = "Root";
+//     obj2.jerNo = 7;
+//     obj2.playerInfo();
+// }
+
+// Output :
+// Player Name : Virat Kolhi
+// Jersey No : 18
+// Player Country : India
+// Player Name : Root
+// Jersey No : 7
+// Player Country : India
+
+// Program 6 :
+
+// class Player {
+//   String? pName;
+//   int? jerNo;
+//   String? country = "India";
+
+//   void playerInfo() {
+//     print("Player Name : ${pName}");
+//     print("Jersey No : ${jerNo}");
+//     print("Player's Country : ${country}");
+//   }
+// }
+
+// void main() {
+//   Player obj1 = Player();
+//   obj1.pName = "Virat Kolhi";
+//   obj1.jerNo = 18;
+//   obj1.playerInfo();
+
+//   Player obj2 = Player();
+//   obj2.pName = "Root";
+//   obj2.jerNo = 11;
+//   obj2.country = "England";
+//   obj2.playerInfo();
+// }
+
+// Output :
+// Player Name : Virat Kolhi
+// Jersey No : 18
+// Player's Country : India
+// Player Name : Root
+// Jersey No : 11
+// Player's Country : England
+
+
+// Program 7 :
+
+// Static in dart : A static member (variable or method) belongs to the class itself. not to any individual object(instance).
+
+// Non-Static(Instance) in Dart : A non-static (or instance) member belongs to a specific object. Each object has its own copy of instance variables and methods can operate on those.
+
+// class Demo {
+//     int x = 10;
+//     static int y = 20;
+     
+//     void info(){
+//         print(x);
+//         print(y);
+//     }
+// }
+
+// void main(){
+//     Demo obj1 = Demo();
+//     print(obj1.x);
+
+//     Demo obj2 = Demo();
+//     print(obj2.x);
+    
+// }
+
+// Output :
+// 10
+// 10
+
+
+// Program 8 :
+
+// class Demo{
+//     int x = 10;
+//     static int y = 20;
+
+//     void info(){
+//         print(x);
+//         print(y);
+//     }
+// }
+
+// void main(){
+//     Demo obj1 = Demo();
+//     obj1.x = 50;
+//     print(obj1.x);
+
+//     Demo obj2 = Demo();
+//     print(obj2.x);
+// }
+
+// Output :
+// 50
+// 10
+
+
+// Program 9 :
+
+// class Demo{
+//     int x = 10;
+//     static int y = 20;
+
+//     void info(){
+//         print(x);
+//         print(y);
+//     }
+// }
+
+// void main(){
+//     Demo obj1 = Demo();
+//     obj1.x = 20;
+//     print(obj1.x);
+
+//     Demo obj2 = Demo();
+//     print(obj2.x);
+
+//     print(obj1.y);
+//     print(obj2.y);
+// }
+
+// Error: The getter 'y' isn't defined for the type 'Demo'.
+//  - 'Demo' is from 'Classes.dart'.
+// Try correcting the name to the name of an existing getter, or defining a getter or field named 'y'.
+
+
+// Program 10 :
 
