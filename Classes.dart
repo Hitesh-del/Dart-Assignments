@@ -271,7 +271,6 @@
 // Jersey No : 11
 // Player's Country : England
 
-
 // Program 7 :
 
 // Static in dart : A static member (variable or method) belongs to the class itself. not to any individual object(instance).
@@ -281,7 +280,7 @@
 // class Demo {
 //     int x = 10;
 //     static int y = 20;
-     
+
 //     void info(){
 //         print(x);
 //         print(y);
@@ -294,13 +293,12 @@
 
 //     Demo obj2 = Demo();
 //     print(obj2.x);
-    
+
 // }
 
 // Output :
 // 10
 // 10
-
 
 // Program 8 :
 
@@ -326,7 +324,6 @@
 // Output :
 // 50
 // 10
-
 
 // Program 9 :
 
@@ -356,6 +353,155 @@
 //  - 'Demo' is from 'Classes.dart'.
 // Try correcting the name to the name of an existing getter, or defining a getter or field named 'y'.
 
-
 // Program 10 :
+
+// class Demo{
+//     int x = 10;
+//     static int y = 20;
+
+//     void info(){
+//         print(x);
+//         print(y);
+//     }
+// }
+
+// void main(){
+//     Demo obj = Demo();
+//     print("Instance obj1 : ${obj.x}");
+
+//     print("Static variable : ${Demo.y}");
+// }
+
+// Output :
+// Instance obj1 : 10
+// Static variable : 20
+
+// Program 11 :
+
+// class Demo{
+//     int x = 10;
+//     static int y = 20;
+
+//     void info(){
+//         print(x);
+//         print(y);
+//     }
+// }
+
+// void main(){
+//     Demo obj1 = Demo();
+//     obj1.x = 50;
+//     print("Instance obj1 : ${obj1.x}");
+
+//     Demo obj2 = Demo();
+//     print("Instance obj2 : ${obj2.x}");
+
+//     print("Static : ${Demo.y}");
+
+//     Demo.y = 70;
+
+//     print("Static : ${Demo.y}");
+
+// }
+
+// Output :
+// Instance obj1 : 50
+// Instance obj2 : 10
+// Static : 20
+// Static : 70
+
+// Program 12 :
+
+// class Demo{
+//     int x = 10;
+//     static int y = 20;
+
+//     void display(){
+//         print("X : ${x}");
+//         print("Y : ${y}");
+//     }
+// }
+
+// void main(){
+//     Demo obj = Demo();
+//     obj.display();
+// }
+
+// Output :
+// X : 10
+// Y : 20 // static variable access through object by the instance method
+
+// Program 13 :
+// Static Method
+
+// class Demo{
+//     int x = 10;
+//     static int y = 20;
+
+//     // static method
+//     static void display(){
+//         print("In Display ");
+//     }
+// }
+
+// void main(){
+//     Demo.display();
+// }
+
+// Output :
+// In Display
+
+// Program 14 :
+
+// class Demo{
+//     int x = 10;
+//     static int y = 20;
+
+//     static void display(){
+//         print("X : ${x}");
+//         print("Y : ${y}");
+//     }
+// }
+
+// void main(){
+//     Demo.display();
+// }
+
+// Error: Undefined name 'x'.
+
+
+
+// Program 15 :
+// Private variable and methods : Private members are only accessible within the same dart library / file .
+// They are not accessible outside the file the are defined in, even if imported.
+
+// class Demo {
+//   int _x = 10;
+//   static int y = 20;
+
+//   void fun() {
+//     print("In fun");
+//   }
+
+//   static void _run() {
+//     print("In run");
+//   }
+// }
+
+// void main() {
+//   print(Demo.y);
+//   Demo obj = Demo();
+//   print(obj._x);
+
+//   obj.fun();
+
+//   Demo._run();
+// }
+
+// Output :
+// 20
+// 10
+// In fun
+// In run
+
 
