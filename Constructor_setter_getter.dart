@@ -20,7 +20,6 @@
 //   obj.display();
 // }
 
-
 // Program 2 :
 
 // class Demo{
@@ -89,7 +88,6 @@
 // Rahul
 // 20
 
-
 // Program 4 :
 // Default Constructor : If no constructor is provided, Dart gives an empty default constructor.
 
@@ -114,7 +112,6 @@
 // Demo Constructor
 // null
 // null
-
 
 // Program 5 :
 // Parametrized Constructor : You define a constructor with the parameters to initialize variables.
@@ -152,5 +149,93 @@
 // Hitesh
 // 20
 
-
 // Program 6 :
+
+// class Demo {
+//   String? str;
+//   int? x;
+
+//   Demo(String? strData, int? xData) {
+//     str = strData;
+//     x = xData;
+//   }
+
+//   void display() {
+//     print(str);
+//     print(x);
+//   }
+// }
+
+// void main() {
+//   Demo obj = Demo();
+//   obj.display();
+// }
+
+// Output :
+// Error: Too few positional arguments: 2 required, 0 given.
+
+// Program 7 :
+
+// class Demo {
+//   String? str;
+//   int? x;
+
+//   Demo(String? strData, int? xData) {
+//     print("In Constructor ");
+//     str = strData;
+//     x = xData;
+//   }
+
+//   void display() {
+//     print(str);
+//     print(x);
+//   }
+// }
+
+// void main() {
+//   Demo obj = Demo("Hitesh", 10);
+//   obj.display();
+// }
+
+// Output :
+// In Constructor
+// Hitesh
+// 10
+
+// Program 8 :
+
+// class Demo {
+//   String? str;
+//   int? x;
+
+//   Demo(String? str, int? x) {
+//     print("In Constructor");
+//     this.str = str;
+//     this.x = x;
+//   }
+
+//   void display() {
+//     print(str);
+//     print(x);
+//   }
+// }
+
+// void main() {
+//   Demo obj = Demo("Hitesh", 10);
+//   obj.display();
+// }
+
+// Output :
+// Without this keyword
+// In Constructor
+// null
+// null
+
+// With this keyword
+// In Constructor
+// Hitesh
+// 10
+
+
+// Program 9 :
+
